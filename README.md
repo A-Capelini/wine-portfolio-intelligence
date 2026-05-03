@@ -11,7 +11,7 @@ Um dashboard analítico e prescritivo avançado projetado para a exploração de
 ---
 
 ## 🏛️ Contexto Acadêmico
-Este sistema compõe o escopo do curso de Ciência de Dados da **Fatec Cotia**, sob a orientação do Prof. **Rômulo Francisco de Souza Maia**.
+Este sistema compõe o escopo do **Projeto Integrador 3** do curso de Ciência de Dados da **Fatec Cotia**, sob a orientação do Prof. **Rômulo Francisco de Souza Maia**.
 
 **Autoria e Desenvolvimento:** 
 * Anderson Capelini Andrade
@@ -46,23 +46,57 @@ O código está modularizado para garantir escalabilidade e manutenção segura:
 
 ---
 
-## 💻 Instalação e Execução (Ambiente Local - Recomendado Conda)
-
-Recomenda-se a utilização do gerenciador de pacotes **Conda** (via Miniconda ou Anaconda) para garantir que as dependências binárias (especialmente do `scikit-learn`) sejam gerenciadas de forma nativa e isolada.
+## 💻 Instalação e Execução
 
 ### Opção 1: Restaurar Ambiente Inteiro (Backup Conda)
-Rode este comando se você deseja recriar o ambiente exatamente como ele foi exportado pelo desenvolvedor:
-
+Rode este comando se você deseja recriar o ambiente via Conda a partir do arquivo YAML limpo exportado (`--from-history`):
 ```bash
 # Clone o repositório
 git clone [https://github.com/A-Capelini/wine-portfolio-intelligence.git](https://github.com/A-Capelini/wine-portfolio-intelligence.git)
 cd wine-portfolio-intelligence
 
-# Cria o ambiente a partir do arquivo YAML completo
+# Cria o ambiente a partir do arquivo YAML
 conda env create -f environment.yml
 
 # Ative o ambiente
 conda activate Dash_Vinho_Streamlit
+
+# Execute a aplicação
+streamlit run app.py
+
+### Opção 2: Instalação Leve (Via pip/venv - Recomendado para Nuvem)
+Se você preferir não utilizar o Conda ou desejar um deploy ultrarrápido focado apenas no `requirements.txt` (método utilizado no Streamlit Cloud), utilize o gerenciador nativo do Python:
+```bash
+# Clone o repositório
+git clone [https://github.com/A-Capelini/wine-portfolio-intelligence.git](https://github.com/A-Capelini/wine-portfolio-intelligence.git)
+cd wine-portfolio-intelligence
+
+# Crie um ambiente virtual nativo
+python -m venv venv
+
+# Ative o ambiente virtual
+# No Windows: venv\Scripts\activate
+# No Linux/Mac: source venv/bin/activate
+
+# Instale as dependências via pip
+pip install -r requirements.txt
+
+# Execute a aplicação
+streamlit run app.py
+
+###Opção 3: Instalação Limpa (Via Conda-Forge)
+Rode este comando para criar um ambiente novo e limpo do zero, instalando as versões compatíveis mais recentes
+
+# Clone o repositório
+git clone [https://github.com/A-Capelini/wine-portfolio-intelligence.git](https://github.com/A-Capelini/wine-portfolio-intelligence.git)
+cd wine-portfolio-intelligence
+
+# Cria um ambiente Python limpo
+conda create --name Dash_Vinho_Streamlit python=3.11 -y
+conda activate Dash_Vinho_Streamlit
+
+# Instala as bibliotecas vitais via conda-forge
+conda install -c conda-forge streamlit pandas scikit-learn plotly -y
 
 # Execute a aplicação
 streamlit run app.py
