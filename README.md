@@ -4,6 +4,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B.svg)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E.svg)
 
+🌐 **Acesso ao Dashboard em Produção:** [anderson-wine-portfolio-intelligence.streamlit.app](https://anderson-wine-portfolio-intelligence.streamlit.app)
+
 Um dashboard analítico e prescritivo avançado projetado para a exploração de dados do setor vitivinícola. O sistema combina análise descritiva de inventário físico com um simulador preditivo "Padrão-Ouro", atuando como um assistente de suporte à decisão enológica.
 
 ---
@@ -50,16 +52,17 @@ Recomenda-se a utilização do gerenciador de pacotes **Conda** (via Miniconda o
 
 ### Opção 1: Restaurar Ambiente Inteiro (Backup Conda)
 Rode este comando se você deseja recriar o ambiente exatamente como ele foi exportado pelo desenvolvedor:
+
 ```bash
 # Clone o repositório
-git clone [https://github.com/seu-usuario/wine-portfolio-intelligence.git](https://github.com/seu-usuario/wine-portfolio-intelligence.git)
+git clone [https://github.com/A-Capelini/wine-portfolio-intelligence.git](https://github.com/A-Capelini/wine-portfolio-intelligence.git)
 cd wine-portfolio-intelligence
 
 # Cria o ambiente a partir do arquivo YAML completo
 conda env create -f environment.yml
 
 # Ative o ambiente
-conda activate Dash_vinho_Strmilit_SVM
+conda activate Dash_Vinho_Streamlit
 
 # Execute a aplicação
 streamlit run app.py
