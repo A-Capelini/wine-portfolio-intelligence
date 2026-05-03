@@ -11,7 +11,7 @@ Um dashboard analítico e prescritivo avançado projetado para a exploração de
 ---
 
 ## 🏛️ Contexto Acadêmico
-Este sistema compõe o escopo do **Projeto Integrador 3** do curso de Ciência de Dados da **Fatec Cotia**, sob a orientação do Prof. **Rômulo Francisco de Souza Maia**.
+Este sistema compõe o escopo do curso de Ciência de Dados da **Fatec Cotia**, sob a orientação do Prof. **Rômulo Francisco de Souza Maia**.
 
 **Autoria e Desenvolvimento:** 
 * Anderson Capelini Andrade
