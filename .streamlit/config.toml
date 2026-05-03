@@ -1,0 +1,18 @@
+[theme]
+# Força o Streamlit a usar a base clara, acabando com as caixas pretas
+base="light"
+
+# Cor principal (Vai pintar as tags dos seletores e barras de progresso com o nosso Bordô)
+primaryColor="#4E0707"
+
+# Cor do fundo principal (O nosso Creme Chardonnay)
+backgroundColor="#FAF9F6"
+
+# Cor do fundo da barra lateral (Um creme levemente mais escuro)
+secondaryBackgroundColor="#F4F1EA"
+
+# Cor padrão dos textos (Um chumbo escuro para garantir leitura)
+textColor="#333333"
+
+# Fonte padrão
+font="sans serif"

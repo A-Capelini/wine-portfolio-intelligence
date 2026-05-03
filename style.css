@@ -1,0 +1,34 @@
+/* ============================================================
+   style.css — Wine Portfolio Intelligence
+   Paleta da Marca: Borgonha (#4E0707), Creme (#FAF9F6), Ouro (#D4AF37)
+   ============================================================ */
+
+/* Configurações Globais */
+.stApp {
+    background-color: #FAF9F6;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #4E0707 !important;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #F0EAD6;
+    border-right: 1px solid #E0D8C3;
+}
+
+/* Ocultar botões de toolbar dos gráficos Plotly */
+.st-emotion-cache-1rqij04 {
+    display: none;
+}
+
+/* Cards de Gráficos */
+.chart-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
